@@ -35,7 +35,7 @@ void setup() {
   Wire.begin();             // Inicializa comunicação I2C com a MPU-6050
   Wire.beginTransmission(MPU);
   Wire.write(0x6B);
-  Wire.write(0x08);
+  Wire.write(0x08);         // desabilita sensor de temperatura e utiliza clock interno 8 MHz
   Wire.endTransmission(true);
 
 
