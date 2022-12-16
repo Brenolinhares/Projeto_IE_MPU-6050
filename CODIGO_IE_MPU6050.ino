@@ -56,7 +56,7 @@ void setup() {
 void loop() {
   
   Wire.beginTransmission(MPU);     // Inicializando transmissão de dados
-  Wire.write(0x3B);                // endereço da MPU-6050
+  Wire.write(0x3B);                
   Wire.endTransmission(false);
   Wire.requestFrom(MPU, 6, true); // Solicita os dados ao sensor
 
